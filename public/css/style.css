@@ -1,0 +1,330 @@
+@font-face {
+    font-family: "marvel-bolditalic";
+    src: url("fonts/marvel/Marvel-BoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "marvel-itlic";
+    src: url("fonts/marvel/Marvel-Italic.ttf");
+}
+
+@font-face {
+    font-family: "marvel-regular";
+    src: url("fonts/marvel/Marvel-Regular.ttf");
+}
+
+@font-face {
+    font-family: "roboto-bold";
+    src: url("fonts/roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "roboto-medium";
+    src: url("../fonts/roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+    font-family: "roboto-regular";
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "roboto-thin";
+    src: url("fonts/roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: "roboto-thinitalic";
+    src: url("fonts/roboto/Roboto-ThinItalic.ttf");
+}
+
+
+/* Fonts speciaux */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: none;
+}
+
+h1 {
+    font-size: 21px;
+    margin-top: 17px;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #616161;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+html {
+    font-size: 10px;
+    font-family: Nunito, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.modal-header .modal-title {
+    font-size: 3rem;
+}
+
+.modal-header .close {
+    font-size: 3rem;
+}
+
+.modal-body .form-group input {
+    font-size: 1.5rem;
+}
+
+.modal-footer button {
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: white;
+    color: white;
+}
+
+.main-container {
+    background: center/cover url("../images/Calque-22.png") no-repeat;
+    min-height: 113vh;
+    padding: 4px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+header.header {
+    display: grid;
+    grid-template-columns: 3fr 8fr 3fr;
+}
+
+header.header .logo {
+    margin: 8px 15px 0 0;
+}
+
+header.header .logo .logo-figure {
+    display: flex;
+}
+
+header.header .logo .logo-figure .logo-image {
+    width: 39px;
+    height: 26px;
+    background: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+header.header .logo .logo-figure .logo-figcaption {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: Lobster, sans-serif;
+}
+
+header.header nav.nav-links {
+    padding: 10px;
+    align-content: center;
+}
+
+header.header nav.nav-links ul.nav-links-list {
+    display: flex;
+    margin-left: -65px;
+    margin-top: 18px;
+}
+
+header.header nav.nav-links ul.nav-links-list .nav-item {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+header.header nav.nav-links ul.nav-links-list .nav-item .nav-item-link {
+    color: white;
+}
+
+header.header nav.nav-links ul.nav-links-list .nav-item .nav-item-link:hover {
+    text-decoration: underline;
+}
+
+header.header .sign-in-sign-up {
+    width: max-content;
+}
+
+header.header .sign-in-sign-up .sign-in {
+    position: relative;
+    left: -21px;
+}
+
+header.header .sign-in-sign-up .sign {
+    padding: 10px 33px;
+    background: #e3256b;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: relative;
+    top: 27px;
+}
+
+header.header .sign-in-sign-up .sign:hover {
+    background: #00cccc;
+}
+
+.start-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 11%;
+}
+
+.start-content .start-content-big-title {
+    font-size: 7rem;
+    margin-bottom: 20px;
+}
+
+.start-content .start-content-description {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.start-content .see-profiles .see-profiles-button {
+    padding: 13px 53px;
+    background-color: #ffffff2e;
+    font-size: 16px;
+    letter-spacing: 1px;
+    /* font-style: italic; */
+    /* font-family: Lobster, sans-serif; */
+    border: none;
+    border-radius: 20px;
+    transition: background ease-in-out 0.3s;
+    color: white;
+    font-weight: 700;
+    margin-top: 53px;
+    position: relative;
+    top: 45px;
+    border: 1px solid #e3256b7d;
+    color: white;
+}
+
+.start-content .see-profiles .see-profiles-button:hover {
+    text-decoration: none;
+    background: #bd1855;
+}
+
+.about-us {
+    color: black;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.search-text p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: auto;
+    font-family: roboto-regular;
+    color: rgba(33, 33, 33, 0.5);
+}
+
+.search-image img {
+    width: 96px;
+}
+
+.search-image .image-match {
+    width: 134px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #616161;
+    font-weight: 700;
+    margin-bottom: 18px;
+    margin-top: 19px;
+}
+
+.caracteristique {
+    margin-top: 10rem;
+}
+
+.caracteristique img {
+    width: 310px;
+}
+
+.caracteristique p {
+    font-size: 14px;
+    margin: auto;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: auto;
+    font-family: roboto-regular;
+    color: rgba(33, 33, 33, 0.5);
+}
+
+.container-caracteristique {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.caracteristique .img-video {
+    width: 257px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer ul {
+    color: rgba(33, 33, 33, 0.5);
+    text-align: center;
+    display: inline-flex;
+}
+
+.footer ul li {
+    margin: 13px;
+    font-size: 13px;
+    border-bottom: 1px solid;
+}
+
+.footer ul li a {
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: auto;
+    font-family: roboto-regular;
+    color: rgba(33, 33, 33, 0.5);
+}
+
+.footer p {
+    letter-spacing: 0px;
+    font-size: 12px;
+    margin: auto;
+    font-family: roboto-regular;
+    color: rgba(33, 33, 33, 0.5);
+}
+
+
+/*# sourceMappingURL=custom.css.map */
