@@ -1,0 +1,226 @@
+/* XS -> SM */
+@media screen and (max-width: 576px) {
+	.start-content .see-profiles .see-profiles-button {
+    	background-color: #e3256b;
+	}
+	header.header .sign-in-sign-up .sign {
+	    background: #e781739e;
+	    border: 1px solid #bd1855;
+	}
+	.navbar-toggler-md {
+		display: none;
+	}
+	.menu-md {
+		transition: all ease-in-out 1s;
+		position: fixed;
+		background: rgba(0, 0, 0, 0.9);
+		z-index: 1000;
+		top: 60px;
+		height: calc(100vh - 20px);
+		width: 100%;
+	}
+	.menu-md .menu-md-list {
+		display: flex;
+		height: 80%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.menu-md .menu-md-list .menu-md-item {
+		font-size: 1.5rem;
+		font-weight: bold;
+		letter-spacing: 4px;
+	}
+	.menu-md.hide{
+		transform: translateX(-100%);
+	}
+	.menu-md.show {
+		transform: translateX(0);
+	}
+	.nav-item-link {
+		display: none;
+	}
+	.navbar-toggler {
+		position: fixed;
+		right: 30px;
+		top: 20px;
+	}
+	.start-content {
+		width: 100%;
+	}
+	.start-content-big-title {
+		font-size: 2.5rem;
+	}
+	.sign-in {
+		position: relative;
+	}
+	.sign-in-sign-up {
+		position: relative;
+		text-align: center;
+		width: 58%;
+		margin: 0 auto;
+		padding: 5px 10px;
+	}
+}
+
+/* SM -> MD */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+	.navbar-toggler-md {
+		position: fixed;
+		right: 50px;
+		top: 30px;
+		background: none;
+		border: none;
+	}
+	.navbar-toggler {
+		display: none;
+	}
+	.sign-in-sign-up  {
+		position: relative;
+		top: 60px;
+		left: 200px;
+		width: 20%;
+	}
+	.sign-in-sign-up .sign {
+		left: 13%;
+	}
+	.nav-item-link {
+		display: none;
+	}
+	.sign-in-sign-up .sign-in {
+		/*margin-right: 50px;*/
+		margin-left: 20px;
+		text-align: center;
+		left: 13%;
+	}
+	.sign-in-sign-up .sign-up {
+		margin-left: 20px;
+		padding: 5px 10px;
+		text-align: center;
+	}
+	.start-content {
+		margin-top: 150px;
+		width: 100%;
+	}
+	.start-content .start-content-big-title {
+		font-size: 4rem;
+	}
+	.menu-md {
+		transition: all ease-in-out 1s;
+		position: fixed;
+		background: rgba(0, 0, 0, 0.9);
+		z-index: 1000;
+		top: 60px;
+		height: calc(100vh - 20px);
+		width: 100%;
+	}
+	.menu-md .menu-md-list {
+		display: flex;
+		height: 80%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.menu-md .menu-md-list .menu-md-item {
+		font-size: 1.5rem;
+		font-weight: bold;
+		letter-spacing: 4px;
+	}
+	.menu-md.hide{
+		transform: translateX(-100%);
+	}
+	.menu-md.show {
+		transform: translateX(0);
+	}
+}
+
+/* MD -> LG */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	.header {
+		grid-template-columns: 2.5fr 1fr;
+	}
+	.nav-item-link {
+		display: none;
+	}
+	.navbar-toggler-md {
+		position: fixed;
+		right: 50px;
+		top: 30px;
+		background: none;
+		border: none;
+	}
+	.sign-in-sign-up  {
+		position: relative;
+		top: 30px;
+		left: 0%;
+		text-align: center;
+		width: 30%;
+		margin: 0 auto;
+		margin-top: 25px;
+		padding: 5px 10px;
+	}
+	.sign-in-sign-up .sign-in {
+		
+	}
+	.sign-in-sign-up .sign-up {
+		
+	}
+	.start-content {
+		margin-top: 121px;
+		width: 80%;
+	}
+	.start-content .start-content-big-title {
+		font-size: 5rem;
+	}
+	.menu-md {
+		transition: all ease-in-out 1s;
+		position: fixed;
+		background: rgba(0, 0, 0, 0.9);
+		z-index: 1000;
+		top: 60px;
+		height: calc(100vh - 20px);
+		width: 100%;
+	}
+	.menu-md .menu-md-list {
+		display: flex;
+		height: 80%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.menu-md .menu-md-list .menu-md-item {
+		font-size: 1.5rem;
+		font-weight: bold;
+		letter-spacing: 4px;
+	}
+	.menu-md.hide {
+		transform: translateX(-100%);
+	}
+	.menu-md.show {
+		transform: translateX(0);
+	}
+}
+
+/* LG -> XL*/
+@media screen and (min-width: 993px) {
+	.navbar-toggler-md {
+		display: none;
+	}
+	.menu-md {
+		display: none;
+	}
+	.header {
+		grid-template-columns: 2.5fr 1fr;
+	}
+	.navbar-brand {
+		position: relative;
+		top: -7px;
+	}
+	.start-content {
+	    margin-top: 91px;
+	    width: 47%;
+	}
+	.sign {
+		display: inline;
+	}
+}

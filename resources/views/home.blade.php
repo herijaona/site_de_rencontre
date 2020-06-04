@@ -22,7 +22,7 @@
     <div class="row">
         <div class="col-md-3">
             <h3>Profile Picture</h3>
-            <img src="{{Auth::user()->avatar}}" width="200px" class="d-block" />
+            <img src="{{ asset('avatars/'. Auth::user()->avatar) }}" width="200px" class="d-block" />
             <form method="post" action="user_avatar/update" enctype="multipart/form-data" class="mt-4">
                 <h4>Update Profile Picture</h4>
                 @csrf

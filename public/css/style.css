@@ -49,6 +49,7 @@
 
 body {
     background: none;
+    width: fit-content;
 }
 
 h1 {
@@ -62,6 +63,16 @@ h2 {
     font-weight: 700;
     margin-bottom: 40px;
     margin-top: 40px;
+}
+
+h5 {
+    color: #ec83b2;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0px;
 }
 
 html {
@@ -89,7 +100,7 @@ a:hover {
     font-size: 3rem;
 }
 
-.modal-body .form-group input {
+.modal-body .form-group input , .modal-body .form-group select {
     font-size: 1.5rem;
 }
 
@@ -100,19 +111,26 @@ a:hover {
 body {
     background-color: white;
     color: white;
+    width: fit-content;
 }
 
 .main-container {
     background: center/cover url("../images/Calque-22.png") no-repeat;
     min-height: 113vh;
-    padding: 4px 50px 0 50px;
+    padding: 4px 40px 0 40px;
     display: flex;
     flex-direction: column;
 }
 
+@media screen and (max-width: 576px) {
+    .main-container {
+        padding: 0 10px;
+    }
+}
+
 header.header {
     display: grid;
-    grid-template-columns: 3fr 8fr 3fr;
+    grid-template-columns: 2.5fr 1fr;
 }
 
 header.header .logo {
@@ -138,21 +156,42 @@ header.header .logo .logo-figure .logo-figcaption {
     font-family: Lobster, sans-serif;
 }
 
+@media screen and (max-width: 576px) {
+    #collapsibleNavbar {
+        background: rgba(64, 42, 37, 0.56) none repeat scroll 0% 0%;
+        position: relative;
+    }
+}
+
+.navbar-toggler-md {
+    color: white;
+}
+
 header.header nav.nav-links {
-    padding: 10px;
+    padding: 0 10px;
     align-content: center;
 }
 
 header.header nav.nav-links ul.nav-links-list {
     display: flex;
-    margin-left: -65px;
-    margin-top: 18px;
+    /*margin: 18px 0;*/
+}
+@media screen and (min-width: 993px) {
+    header.header nav.nav-links ul.nav-links-list {
+        margin: 18px 0 18px 30px;
+    }
+    .sign-in-sign-up .sign {
+        padding: 5px 0;
+    }
+    .start-content {
+        width: 100%;
+    }
 }
 
 header.header nav.nav-links ul.nav-links-list .nav-item {
     font-size: 1.6rem;
     font-weight: bold;
-    margin: 0 10px;
+    padding: 0 10px;
 }
 
 header.header nav.nav-links ul.nav-links-list .nav-item .nav-item-link {
@@ -164,16 +203,38 @@ header.header nav.nav-links ul.nav-links-list .nav-item .nav-item-link:hover {
 }
 
 header.header .sign-in-sign-up {
-    width: max-content;
+    position: absolute;
+    right: 23px;
+}
+@media screen and (max-width: 576px) {
+    header.header .sign-in-sign-up {
+        position: relative;
+        right: 0;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    header.header .sign-in-sign-up {
+        width: 30%;
+    }
+    header.header .sign-in-sign-up .sign-in {
+        width: 100%;
+        padding: 5px 20px;
+    }
 }
 
 header.header .sign-in-sign-up .sign-in {
     position: relative;
-    left: -21px;
+    left: -2px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 576px) {
+    header.header .sign-in-sign-up .sign-in {
+        left: 0;
+    }
 }
 
 header.header .sign-in-sign-up .sign {
-    padding: 10px 33px;
+    padding: 10px 10px;
     background: #e3256b;
     font-size: 14px;
     border: none;
@@ -185,23 +246,45 @@ header.header .sign-in-sign-up .sign {
     position: relative;
     top: 27px;
 }
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .header .sign-in-sign-up .sign {
+        left: 13%;
+        width: 100%;
+    }
+    .header .sign-in-sign-up .sign.sign-in {
+        left: 13%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header.header .sign-in-sign-up .sign {
+        top: 0;
+        padding: 5px;
+        margin-top: 12px;
+        padding: 9px;
+        margin-bottom: 30px;
+    }
+}
 
 header.header .sign-in-sign-up .sign:hover {
-    background: #00cccc;
+    background: #009ccc;
 }
 
 .start-content {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    margin-top: 11%;
+}
+@media screen and (max-width: 576px) {
+    .start-content {
+        width: 97%;
+    }
 }
 
 .start-content .start-content-big-title {
-    font-size: 7rem;
+    font-size: 6rem;
     margin-bottom: 20px;
 }
 
@@ -216,9 +299,6 @@ header.header .sign-in-sign-up .sign:hover {
     background-color: #ffffff2e;
     font-size: 16px;
     letter-spacing: 1px;
-    /* font-style: italic; */
-    /* font-family: Lobster, sans-serif; */
-    border: none;
     border-radius: 20px;
     transition: background ease-in-out 0.3s;
     color: white;
@@ -232,6 +312,7 @@ header.header .sign-in-sign-up .sign:hover {
 
 .start-content .see-profiles .see-profiles-button:hover {
     text-decoration: none;
+    border: none;
     background: #bd1855;
 }
 
@@ -243,6 +324,7 @@ header.header .sign-in-sign-up .sign:hover {
 }
 
 .search-text p {
+    width: 90%;
     letter-spacing: 1px;
     font-size: 14px;
     margin: auto;
@@ -326,5 +408,50 @@ h3 {
     color: rgba(33, 33, 33, 0.5);
 }
 
-
+.temoignages img {
+    width: 261px;
+    height: 173px;
+    border-radius: 4px;
+}
 /*# sourceMappingURL=custom.css.map */
+
+/*responsive design*/
+
+@media(max-width: 576px){
+    .footer ul {
+        display: block;
+        width: 181px;
+        margin: auto;
+    }
+    .footer p {
+        margin: 33px;
+    }
+    .temoignages img{
+        width: 100%;
+        height: auto;
+    }
+    .caracteristique img {
+        width: 100%;
+    }
+    .caracteristique .image-chat{
+        width: 310px;
+    }
+    .caracteristique{
+        margin-top: 0rem;
+    }
+    .search-text{
+        margin-bottom: 25px;
+    }
+    .start-content{
+        width: 90%;
+    }
+    .start-content .start-content-big-title{
+        font-size: 4rem !important;
+    }
+    header.header{
+        display: block;
+    }
+    header.header .sign-in-sign-up {
+        position: relative;
+    }
+}
